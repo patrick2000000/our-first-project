@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        body {
+            background-color: rgb(136, 255, 0);
+            background-image: url('cyakoza.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, button {
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Person Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="music"> Music
+            <input type="checkbox" name="hobby" value="sport"> Sport
+
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
